@@ -9,6 +9,7 @@
   --background-top-color: #2f303a;
   --hover-main-button-color: #188ce8;
   --button-portfolio-color: #f5f4fa;
+  --address-color: rgba(255, 255, 255, 0.6);
 }
 body {
   list-style: none;
@@ -83,8 +84,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--light-color);
   text-align: center;
+  text-transform: uppercase;
+}
+.top-button{
+  text-decoration: none;
 }
 .top-button {
+  font-family: inherit;
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -135,7 +141,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-color);
 }
 
@@ -154,7 +159,7 @@ body {
   line-height: 1.71;
   text-align: left;
   font-style: normal;
-  color: inherit;
+  color: var(--address-color);
 }
 .footer-link-adr {
   color: var(--light-color);
@@ -178,8 +183,12 @@ body {
 /* main styles, page portfolio */
 
 }
+.portfolio-button{
+  text-decoration: none;
+}
 .portfolio-button {
   background-color: var(--button-portfolio-color);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -187,6 +196,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
+
 .portfolio-button:focus,
 .portfolio-button:hover {
   background-color: var(--accent-color);
